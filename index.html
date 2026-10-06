@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Café Aurora</title>
+    <meta name="description" content="Café Aurora - Cafeteria artesanal com cafés especiais e doces deliciosos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Café <span>Aurora</span></a>
+
+        <nav class="nav">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="cart-button" id="cartButton">
+            🛒 <span id="cartCount">0</span>
+        </button>
+
+        <button class="menu-button" id="menuButton">☰</button>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="tag">CAFÉ ARTESANAL</p>
+
+                <h1>
+                    O sabor que
+                    <span>transforma</span>
+                    seus momentos.
+                </h1>
+
+                <p>
+                    Cafés especiais, doces artesanais e momentos
+                    preparados com carinho para você.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#cardapio" class="button primary">
+                        Ver cardápio
+                    </a>
+
+                    <a href="#sobre" class="button secondary">
+                        Nossa história
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-coffee">
+                ☕
+            </div>
+        </section>
+
+
+        <section class="about" id="sobre">
+            <div>
+                <p class="tag">SOBRE NÓS</p>
+
+                <h2>Mais que café.<br><span>Uma experiência.</span></h2>
+
+                <p>
+                    O Café Aurora nasceu da paixão por café de qualidade
+                    e pela vontade de criar um lugar onde as pessoas
+                    pudessem desacelerar e aproveitar bons momentos.
+                </p>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <strong>5+</strong>
+                    <span>Anos de experiência</span>
+                </div>
+
+                <div>
+                    <strong>10k+</strong>
+                    <span>Cafés servidos</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Ingredientes selecionados</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="menu-section" id="cardapio">
+            <div class="section-title">
+                <p class="tag">NOSSO CARDÁPIO</p>
+                <h2>Escolha seu favorito</h2>
+            </div>
+
+            <div class="filters">
+                <button class="filter active" data-category="todos">Todos</button>
+                <button class="filter" data-category="cafe">Cafés</button>
+                <button class="filter" data-category="doce">Doces</button>
+                <button class="filter" data-category="salgado">Salgados</button>
+            </div>
+
+            <div class="products">
+
+                <article class="product" data-category="cafe">
+                    <div class="product-image">☕</div>
+
+                    <div class="product-info">
+                        <span>Café</span>
+                        <h3>Cappuccino</h3>
+                        <p>Espresso, leite cremoso e espuma.</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 12,90</strong>
+                            <button class="add-button"
+                                data-name="Cappuccino"
+                                data-price="12.90">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product" data-category="cafe">
+                    <div class="product-image">☕</div>
+
+                    <div class="product-info">
+                        <span>Café</span>
+                        <h3>Espresso</h3>
+                        <p>Café intenso e aromático.</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 7,90</strong>
+                            <button class="add-button"
+                                data-name="Espresso"
+                                data-price="7.90">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product" data-category="cafe">
+                    <div class="product-image">🥛</div>
+
+                    <div class="product-info">
+                        <span>Café</span>
+                        <h3>Latte</h3>
+                        <p>Espresso suave com leite vaporizado.</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 11,90</strong>
+                            <button class="add-button"
+                                data-name="Latte"
+                                data-price="11.90">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product" data-category="doce">
+                    <div class="product-image">🥐</div>
+
+                    <div class="product-info">
+                        <span>Doce</span>
+                        <h3>Croissant</h3>
+                        <p>Massa folhada dourada e crocante.</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 9,90</strong>
+                            <button class="add-button"
+                                data-name="Croissant"
+                                data-price="9.90">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product" data-category="doce">
+                    <div class="product-image">🍰</div>
+
+                    <div class="product-info">
+                        <span>Doce</span>
+                        <h3>Bolo de Chocolate</h3>
+                        <p>Bolo macio com chocolate artesanal.</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 13,90</strong>
+                            <button class="add-button"
+                                data-name="Bolo de Chocolate"
+                                data-price="13.90">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="product" data-category="salgado">
+                    <div class="product-image">🥪</div>
+
+                    <div class="product-info">
+                        <span>Salgado</span>
+                        <h3>Sanduíche Aurora</h3>
+                        <p>Pão artesanal, queijo e ingredientes frescos.</p>
+
+                        <div class="product-bottom">
+                            <strong>R$ 16,90</strong>
+                            <button class="add-button"
+                                data-name="Sanduíche Aurora"
+                                data-price="16.90">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <section class="contact" id="contato">
+            <div>
+                <p class="tag">FALE CONOSCO</p>
+                <h2>Vamos conversar?</h2>
+                <p>
+                    Tem alguma dúvida? Envie uma mensagem para nossa equipe.
+                </p>
+            </div>
+
+            <form id="contactForm">
+
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com">
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" placeholder="Sua mensagem"></textarea>
+
+                <button class="button primary" type="submit">
+                    Enviar mensagem
+                </button>
+
+                <p id="formMessage"></p>
+            </form>
+        </section>
+
+    </main>
+
+
+    <div class="cart" id="cart">
+
+        <div class="cart-header">
+            <h2>Seu pedido</h2>
+            <button id="closeCart">×</button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <strong>
+                Total: R$ <span id="cartTotal">0,00</span>
+            </strong>
+
+            <button class="button primary" id="finishOrder">
+                Finalizar pedido
+            </button>
+        </div>
+
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer>
+        <p>© 2026 Café Aurora. Feito com ☕ e carinho.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
